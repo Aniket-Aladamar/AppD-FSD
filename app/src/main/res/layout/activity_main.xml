@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:elevation="4dp">
+
+        <!-- Company Info Card -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#3F51B5" />
+
+        <!-- Company Name Input -->
+        <EditText
+            android:id="@+id/input_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Company Name"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Contact Person Input -->
+        <EditText
+            android:id="@+id/input_contact_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contact Person Name"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Notifications Switch -->
+        <Switch
+            android:id="@+id/switch_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#3F51B5"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <!-- Date and Time Picker Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#3F51B5" />
+
+        <!-- Date Picker Button -->
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"/>
+
+        <!-- Date Display -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No date selected"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Time Picker Button -->
+        <Button
+            android:id="@+id/btnSelectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"/>
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No time selected"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Rating and Image Switcher Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Us and View Images"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#3F51B5" />
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Image Switcher with Reduced Height -->
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Submit and Website Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Website Button for Implicit Intent -->
+        <Button
+            android:id="@+id/btnWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Website"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
